@@ -6,14 +6,14 @@
 <title>DJ Johnny Looch — Event Management</title>
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@300;400;500;600&family=DM+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
-:root{--bg:#080a10;--surface:#0f1219;--surface2:#161b26;--border:#1e2535;--accent:#00d4ff;--accent2:#ff3d6b;--gold:#f0c040;--text:#e8eaf0;--muted:#5a6280;--green:#00e5a0;--radius:10px;}
+:root{--bg:#f0f2f7;--surface:#ffffff;--surface2:#f0f2f7;--border:#dde1ea;--accent:#0284c7;--accent2:#ff3d6b;--gold:#f0c040;--text:#111827;--muted:#6b7280;--green:#00e5a0;--radius:10px;}
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
 body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min-height:100vh;overflow-x:hidden;}
 .app{display:flex;min-height:100vh;}
-.sidebar{width:220px;background:var(--surface);border-right:1px solid var(--border);display:flex;flex-direction:column;flex-shrink:0;position:fixed;height:100vh;z-index:100;}
+.sidebar{width:220px;background:#ffffff;border-right:1px solid var(--border);display:flex;flex-direction:column;flex-shrink:0;position:fixed;height:100vh;z-index:100;}
 .main{margin-left:220px;flex:1;padding:32px;min-height:100vh;}
 .sidebar-logo{padding:24px 20px 20px;border-bottom:1px solid var(--border);}
-.sidebar-logo .brand{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:2px;color:var(--accent);line-height:1;}
+.sidebar-logo .brand{font-family:'Bebas Neue',sans-serif;font-size:26px;letter-spacing:2px;color:#0284c7;line-height:1;}
 .sidebar-logo .sub{font-size:10px;color:var(--muted);letter-spacing:3px;text-transform:uppercase;margin-top:2px;}
 .sidebar-role{margin:12px 16px;background:var(--surface2);border-radius:6px;padding:8px 12px;}
 .sidebar-role label{font-size:9px;text-transform:uppercase;letter-spacing:2px;color:var(--muted);display:block;margin-bottom:4px;}
@@ -23,7 +23,7 @@ body{background:var(--bg);color:var(--text);font-family:'DM Sans',sans-serif;min
 .nav-section{font-size:9px;text-transform:uppercase;letter-spacing:2px;color:var(--muted);padding:16px 20px 6px;}
 .nav-item{display:flex;align-items:center;gap:10px;padding:10px 20px;cursor:pointer;color:var(--muted);font-size:13px;font-weight:500;transition:all .15s;border-left:2px solid transparent;}
 .nav-item:hover{color:var(--text);background:var(--surface2);}
-.nav-item.active{color:var(--accent);background:rgba(0,212,255,.06);border-left-color:var(--accent);}
+.nav-item.active{color:#0284c7;background:rgba(2,132,199,.08);border-left-color:#0284c7;}
 .nav-item .icon{font-size:16px;width:20px;text-align:center;}
 .sidebar-footer{padding:16px 20px;border-top:1px solid var(--border);font-size:11px;color:var(--muted);}
 .page{display:none;animation:fadeIn .2s ease;}
@@ -98,7 +98,7 @@ tr:hover td{background:rgba(255,255,255,.02);}
 .modal-close{background:var(--surface2);border:none;color:var(--muted);width:32px;height:32px;border-radius:6px;cursor:pointer;font-size:18px;display:flex;align-items:center;justify-content:center;transition:all .15s;}
 .modal-close:hover{color:var(--text);background:var(--border);}
 .modal-footer{display:flex;gap:10px;justify-content:flex-end;margin-top:24px;padding-top:20px;border-top:1px solid var(--border);}
-.contract-preview{background:#fff;color:#111;border-radius:8px;padding:40px;font-family:'DM Sans',sans-serif;font-size:13px;line-height:1.7;}
+.contract-preview{background:#fff;color:#111;border:1px solid #dde1ea;border-radius:8px;padding:40px;font-family:'DM Sans',sans-serif;font-size:13px;line-height:1.7;}
 .contract-preview h1{font-size:22px;font-weight:700;text-align:center;margin-bottom:4px;}
 .contract-preview .contract-sub{text-align:center;color:#666;font-size:12px;margin-bottom:24px;}
 .contract-preview h3{font-size:13px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:20px 0 6px;color:#333;}
@@ -127,7 +127,7 @@ tr:hover td{background:rgba(255,255,255,.02);}
 .tab{flex:1;text-align:center;padding:8px 12px;border-radius:6px;cursor:pointer;font-size:12px;font-weight:600;color:var(--muted);transition:all .15s;}
 .tab.active{background:var(--surface);color:var(--text);box-shadow:0 1px 4px rgba(0,0,0,.3);}
 .toast-container{position:fixed;bottom:24px;right:24px;z-index:9999;display:flex;flex-direction:column;gap:8px;}
-.toast{background:var(--surface);border:1px solid var(--border);border-radius:8px;padding:12px 18px;font-size:13px;display:flex;align-items:center;gap:10px;animation:slideIn .2s ease;min-width:240px;box-shadow:0 8px 32px rgba(0,0,0,.4);}
+.toast{background:#ffffff;border:1px solid var(--border);box-shadow:0 4px 20px rgba(0,0,0,.12);border-radius:8px;padding:12px 18px;font-size:13px;display:flex;align-items:center;gap:10px;animation:slideIn .2s ease;min-width:240px;box-shadow:0 8px 32px rgba(0,0,0,.4);}
 .toast.success{border-left:3px solid var(--green);}
 .toast.error{border-left:3px solid var(--accent2);}
 .toast.info{border-left:3px solid var(--accent);}
@@ -309,13 +309,109 @@ tr:hover td{background:rgba(255,255,255,.02);}
     <div class="tab" onclick="plannerTab('bridal')">Bridal Party</div>
   </div>
   <div id="pt-details">
-    <div class="form-row col2"><div class="form-group"><label>Partner 1</label><input id="p1-name" placeholder="Bride / Partner"></div><div class="form-group"><label>Partner 2</label><input id="p2-name" placeholder="Groom / Partner"></div></div>
-    <div class="form-row col3"><div class="form-group"><label>Ceremony Time</label><input type="time" id="ceremony-time"></div><div class="form-group"><label>Cocktail Hour</label><input type="time" id="cocktail-time"></div><div class="form-group"><label>Reception Starts</label><input type="time" id="reception-time"></div></div>
-    <div class="form-row col2"><div class="form-group"><label>Ceremony Venue</label><input id="ceremony-venue"></div><div class="form-group"><label>Reception Venue</label><input id="reception-venue"></div></div>
-    <div class="form-row col2"><div class="form-group"><label>Guest Count</label><input type="number" id="guest-count"></div><div class="form-group"><label>DJ End Time</label><input type="time" id="dj-end"></div></div>
-    <div class="form-group"><label>Notes for DJ</label><textarea id="dj-notes"></textarea></div>
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:12px;font-weight:600;">Couple &amp; Timing</div>
+  <div class="form-row col2">
+    <div class="form-group"><label>Partner 1 (Bride/Partner)</label><input id="p1-name" placeholder="Full name"></div>
+    <div class="form-group"><label>Partner 2 (Groom/Partner)</label><input id="p2-name" placeholder="Full name"></div>
   </div>
-  <div id="pt-timeline" style="display:none;">
+  <div class="form-row col3">
+    <div class="form-group"><label>Ceremony Time</label><input type="time" id="ceremony-time"></div>
+    <div class="form-group"><label>Cocktail Hour</label><input type="time" id="cocktail-time"></div>
+    <div class="form-group"><label>Reception Starts</label><input type="time" id="reception-time"></div>
+  </div>
+  <div class="form-row col2">
+    <div class="form-group"><label>Ceremony Venue</label><input id="ceremony-venue"></div>
+    <div class="form-group"><label>Reception Venue</label><input id="reception-venue"></div>
+  </div>
+  <div class="form-row col2">
+    <div class="form-group"><label>Guest Count</label><input type="number" id="guest-count"></div>
+    <div class="form-group"><label>DJ End Time</label><input type="time" id="dj-end"></div>
+  </div>
+
+  <div style="height:1px;background:var(--border);margin:20px 0;"></div>
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:12px;font-weight:600;">Bridal Party</div>
+  <div class="form-row col2">
+    <div class="form-group"><label>Best Man</label><input id="best-man" placeholder="Name"></div>
+    <div class="form-group"><label>Maid of Honor</label><input id="maid-of-honor" placeholder="Name"></div>
+  </div>
+  <div class="form-group"><label>Bridal Party Members</label><textarea id="bridal-party" placeholder="List all names, e.g. bridesmaids and groomsmen..." style="min-height:60px;"></textarea></div>
+  <div class="form-group"><label style="display:flex;align-items:center;gap:8px;cursor:pointer;"><input type="checkbox" id="bridal-announced" style="width:auto;"> Bridal party gets announced individually at grand entrance</label></div>
+
+  <div style="height:1px;background:var(--border);margin:20px 0;"></div>
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:12px;font-weight:600;">Toasts &amp; Blessing</div>
+  <div class="form-row col2">
+    <div class="form-group"><label>Number of Toasts</label>
+      <select id="toast-count">
+        <option value="0">0 — No toasts</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+        <option value="3">3</option>
+        <option value="4">4</option>
+        <option value="5">5+</option>
+      </select>
+    </div>
+    <div class="form-group"><label>Who Gives Toasts</label><input id="toast-who" placeholder="e.g. Best Man, MOH, Father of Bride"></div>
+  </div>
+  <div class="form-group">
+    <label style="display:flex;align-items:center;gap:8px;cursor:pointer;">
+      <input type="checkbox" id="has-blessing" style="width:auto;" onchange="document.getElementById('blessing-who-group').style.display=this.checked?'block':'none'">
+      Blessing / prayer before dinner
+    </label>
+  </div>
+  <div class="form-group" id="blessing-who-group" style="display:none;">
+    <label>Who Gives the Blessing</label><input id="blessing-who" placeholder="Name or role">
+  </div>
+
+  <div style="height:1px;background:var(--border);margin:20px 0;"></div>
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:12px;font-weight:600;">Special Dances</div>
+  <div class="grid2" style="margin-bottom:12px;">
+    <div class="card" style="padding:14px;">
+      <label style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;margin-bottom:10px;cursor:pointer;">
+        <input type="checkbox" id="has-mother-son" style="width:auto;" onchange="toggleDanceField('mother-son')"> Mother/Son Dance
+      </label>
+      <div id="mother-son-fields" style="display:none;">
+        <div class="form-group" style="margin-bottom:8px;"><label>Song</label><input id="mother-son-song" placeholder="Song title — Artist"></div>
+        <div class="form-group" style="margin:0;"><label>Names</label><input id="mother-son-who" placeholder="e.g. Maria &amp; Tommy"></div>
+      </div>
+    </div>
+    <div class="card" style="padding:14px;">
+      <label style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;margin-bottom:10px;cursor:pointer;">
+        <input type="checkbox" id="has-father-daughter" style="width:auto;" onchange="toggleDanceField('father-daughter')"> Father/Daughter Dance
+      </label>
+      <div id="father-daughter-fields" style="display:none;">
+        <div class="form-group" style="margin-bottom:8px;"><label>Song</label><input id="father-daughter-song" placeholder="Song title — Artist"></div>
+        <div class="form-group" style="margin:0;"><label>Names</label><input id="father-daughter-who" placeholder="e.g. Bob &amp; Sarah"></div>
+      </div>
+    </div>
+  </div>
+
+  <div style="height:1px;background:var(--border);margin:20px 0;"></div>
+  <div style="font-size:11px;text-transform:uppercase;letter-spacing:1.5px;color:var(--muted);margin-bottom:12px;font-weight:600;">Reception Events</div>
+  <div class="form-row col3">
+    <div class="card" style="padding:14px;">
+      <label style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;cursor:pointer;margin-bottom:10px;">
+        <input type="checkbox" id="has-cake" style="width:auto;"> Cake Cutting
+      </label>
+      <div class="form-group" style="margin:0;"><label>Song (optional)</label><input id="cake-song" placeholder="Song title"></div>
+    </div>
+    <div class="card" style="padding:14px;">
+      <label style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;cursor:pointer;margin-bottom:10px;">
+        <input type="checkbox" id="has-bouquet" style="width:auto;"> Bouquet Toss
+      </label>
+      <div class="form-group" style="margin:0;"><label>Song (optional)</label><input id="bouquet-song" placeholder="Song title"></div>
+    </div>
+    <div class="card" style="padding:14px;">
+      <label style="display:flex;align-items:center;gap:8px;font-size:13px;font-weight:600;cursor:pointer;margin-bottom:10px;">
+        <input type="checkbox" id="has-garter" style="width:auto;"> Garter Toss
+      </label>
+      <div class="form-group" style="margin:0;"><label>Song (optional)</label><input id="garter-song" placeholder="Song title"></div>
+    </div>
+  </div>
+
+  <div style="height:1px;background:var(--border);margin:20px 0;"></div>
+  <div class="form-group"><label>Additional Notes for DJ</label><textarea id="dj-notes" placeholder="Anything else the DJ should know..."></textarea></div>
+</div>
+<div id="pt-timeline" style="display:none;">
     <div style="display:flex;justify-content:space-between;align-items:center;margin-bottom:16px;"><p style="font-size:13px;color:var(--muted);">Build your reception timeline.</p><button class="btn btn-ghost btn-sm" onclick="addTimelineItem()">+ Add Moment</button></div>
     <div id="timeline-list"></div>
     <div style="margin-top:12px;background:var(--surface2);border:1px dashed var(--border);border-radius:8px;padding:16px;">
@@ -742,6 +838,16 @@ async function openPlannerModal(eventId) {
   ['p1-name','p2-name','ceremony-time','cocktail-time','reception-time','ceremony-venue','reception-venue','dj-end','dj-notes'].forEach(id => {
     const el=document.getElementById(id); const key=id.replace(/-([a-z])/g,(_,c)=>c.toUpperCase()); if(el) el.value=currentPlanner[key]||currentPlanner[id]||'';
   });
+  // Load new detail fields
+  const detailFields = ['best-man','maid-of-honor','bridal-party','toast-who','blessing-who','mother-son-song','mother-son-who','father-daughter-song','father-daughter-who','cake-song','bouquet-song','garter-song'];
+  detailFields.forEach(id => { const el=document.getElementById(id); const key=id.replace(/-([a-z])/g,(_,c)=>c.toUpperCase()).replace(/-/g,'_'); if(el) el.value=currentPlanner[id.replace(/-/g,'_')]||currentPlanner[key]||''; });
+  const checkboxFields = ['bridal-announced','has-blessing','has-mother-son','has-father-daughter','has-cake','has-bouquet','has-garter'];
+  checkboxFields.forEach(id => { const el=document.getElementById(id); const key=id.replace(/-/g,'_'); if(el) el.checked=currentPlanner[key]||false; });
+  if(document.getElementById('toast-count') && currentPlanner.toast_count) document.getElementById('toast-count').value=currentPlanner.toast_count;
+  if(document.getElementById('blessing-who-group')) document.getElementById('blessing-who-group').style.display=currentPlanner.has_blessing?'block':'none';
+  if(document.getElementById('mother-son-fields')) document.getElementById('mother-son-fields').style.display=currentPlanner.has_mother_son?'block':'none';
+  if(document.getElementById('father-daughter-fields')) document.getElementById('father-daughter-fields').style.display=currentPlanner.has_father_daughter?'block':'none';
+
   const gcEl = document.getElementById('guest-count'); if(gcEl) gcEl.value = currentPlanner.guest_count||'';
   timelineItems = currentPlanner.timeline ? (typeof currentPlanner.timeline==='string' ? JSON.parse(currentPlanner.timeline) : currentPlanner.timeline) : [];
   renderTimelineList();
@@ -838,6 +944,26 @@ async function savePlanner() {
     event_id: currentEventId,
     partner1: document.getElementById('p1-name').value,
     partner2: document.getElementById('p2-name').value,
+    best_man: document.getElementById('best-man') ? document.getElementById('best-man').value : '',
+    maid_of_honor: document.getElementById('maid-of-honor') ? document.getElementById('maid-of-honor').value : '',
+    bridal_party: document.getElementById('bridal-party') ? document.getElementById('bridal-party').value : '',
+    bridal_announced: document.getElementById('bridal-announced') ? document.getElementById('bridal-announced').checked : false,
+    toast_count: document.getElementById('toast-count') ? document.getElementById('toast-count').value : '0',
+    toast_who: document.getElementById('toast-who') ? document.getElementById('toast-who').value : '',
+    has_blessing: document.getElementById('has-blessing') ? document.getElementById('has-blessing').checked : false,
+    blessing_who: document.getElementById('blessing-who') ? document.getElementById('blessing-who').value : '',
+    has_mother_son: document.getElementById('has-mother-son') ? document.getElementById('has-mother-son').checked : false,
+    mother_son_song: document.getElementById('mother-son-song') ? document.getElementById('mother-son-song').value : '',
+    mother_son_who: document.getElementById('mother-son-who') ? document.getElementById('mother-son-who').value : '',
+    has_father_daughter: document.getElementById('has-father-daughter') ? document.getElementById('has-father-daughter').checked : false,
+    father_daughter_song: document.getElementById('father-daughter-song') ? document.getElementById('father-daughter-song').value : '',
+    father_daughter_who: document.getElementById('father-daughter-who') ? document.getElementById('father-daughter-who').value : '',
+    has_cake: document.getElementById('has-cake') ? document.getElementById('has-cake').checked : false,
+    cake_song: document.getElementById('cake-song') ? document.getElementById('cake-song').value : '',
+    has_bouquet: document.getElementById('has-bouquet') ? document.getElementById('has-bouquet').checked : false,
+    bouquet_song: document.getElementById('bouquet-song') ? document.getElementById('bouquet-song').value : '',
+    has_garter: document.getElementById('has-garter') ? document.getElementById('has-garter').checked : false,
+    garter_song: document.getElementById('garter-song') ? document.getElementById('garter-song').value : '',
     ceremony_time: document.getElementById('ceremony-time').value,
     cocktail_time: document.getElementById('cocktail-time').value,
     reception_time: document.getElementById('reception-time').value,
@@ -957,31 +1083,91 @@ async function exportPlannerPDF(eventId) {
   const dont = songs.filter(s=>s.type==='dont_play');
   const timeline = p.timeline ? (typeof p.timeline==='string'?JSON.parse(p.timeline):p.timeline) : [];
   const genres = p.genres ? (typeof p.genres==='string'?JSON.parse(p.genres):p.genres) : [];
-  const bp = p.bridal_party ? (typeof p.bridal_party==='string'?JSON.parse(p.bridal_party):p.bridal_party) : {};
   const sorted = [...timeline].sort((a,b)=>a.time.localeCompare(b.time));
-  const w=window.open('','_blank');
-  w.document.write(`<html><head><title>Event Planner — ${e?e.name:''}</title><style>body{font-family:sans-serif;padding:40px;max-width:720px;margin:auto;font-size:13px;color:#111;line-height:1.6;}h1{font-size:24px;margin-bottom:4px;}h2{font-size:15px;margin:20px 0 8px;border-bottom:2px solid #eee;padding-bottom:4px;}table{width:100%;border-collapse:collapse;margin-bottom:16px;}td,th{border:1px solid #eee;padding:8px 10px;text-align:left;}th{background:#f5f5f5;font-size:11px;text-transform:uppercase;letter-spacing:1px;}.must{color:#047857;}.dont{color:#b91c1c;}</style></head><body>
+
+  const yn = (v) => v ? '✅ Yes' : '❌ No';
+  const val = (v) => v || '—';
+
+  const w = window.open('','_blank');
+  w.document.write(`<!DOCTYPE html><html><head><title>Event Planner — ${e?e.name:''}</title>
+  <style>
+    body{font-family:sans-serif;padding:40px;max-width:720px;margin:auto;font-size:13px;color:#111;line-height:1.6;}
+    h1{font-size:24px;margin-bottom:4px;} h2{font-size:14px;font-weight:700;text-transform:uppercase;letter-spacing:1px;margin:24px 0 10px;border-bottom:2px solid #eee;padding-bottom:6px;color:#333;}
+    table{width:100%;border-collapse:collapse;margin-bottom:16px;}
+    td,th{border:1px solid #eee;padding:8px 10px;text-align:left;}
+    th{background:#f5f5f5;font-size:11px;text-transform:uppercase;letter-spacing:1px;}
+    .grid2{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+    .grid3{display:grid;grid-template-columns:1fr 1fr 1fr;gap:16px;}
+    .box{background:#f9f9f9;border:1px solid #eee;border-radius:6px;padding:12px;}
+    .box strong{display:block;font-size:12px;color:#666;margin-bottom:2px;}
+    .must{color:#047857;} .dont{color:#b91c1c;}
+    .check{font-size:14px;}
+    @media print{body{padding:20px;}}
+  </style></head><body>
   <h1>${e?e.name:'Event'} — DJ Event Planner</h1>
-  <p style="color:#666;">Johnny Looch Entertainment | ${e?formatDate(e.date):''} | ${e?e.venue||'':''}</p>
-  <h2>Couple</h2><p>${p.partner1||''} &amp; ${p.partner2||''}</p>
-  <h2>Schedule Overview</h2>
-  <p>Ceremony: ${p.ceremony_time||'—'} | Cocktail Hour: ${p.cocktail_time||'—'} | Reception: ${p.reception_time||'—'} | DJ End: ${p.dj_end_time||'—'}</p>
-  <p>Guests: ${p.guest_count||'—'}</p>
-  <h2>Reception Timeline</h2>
-  <table><tr><th>Time</th><th>Moment</th><th>Notes</th></tr>${sorted.map(t=>`<tr><td><strong>${t.time||'—'}</strong></td><td>${t.label}</td><td style="color:#666;">${t.note||''}</td></tr>`).join('')}</table>
-  <h2>Music Lists</h2>
-  <div style="display:flex;gap:20px;">
-    <div style="flex:1;"><strong class="must">✅ Must Play (${must.length})</strong><ul>${must.map(s=>`<li>${s.title}${s.artist?' — '+s.artist:''}</li>`).join('')||'<li style="color:#999;">None listed</li>'}</ul></div>
-    <div style="flex:1;"><strong class="dont">🚫 Do Not Play (${dont.length})</strong><ul>${dont.map(s=>`<li>${s.title}${s.artist?' — '+s.artist:''}</li>`).join('')||'<li style="color:#999;">None listed</li>'}</ul></div>
+  <p style="color:#666;margin-bottom:4px;">Johnny Looch Entertainment &nbsp;|&nbsp; ${e?formatDate(e.date):''} &nbsp;|&nbsp; ${e?e.venue||'':''}</p>
+
+  <h2>Couple &amp; Schedule</h2>
+  <div class="grid2" style="margin-bottom:12px;">
+    <div class="box"><strong>Couple</strong>${val(p.partner1)} &amp; ${val(p.partner2)}</div>
+    <div class="box"><strong>Guest Count</strong>${val(p.guest_count)}</div>
+    <div class="box"><strong>Ceremony Time</strong>${val(p.ceremony_time)}</div>
+    <div class="box"><strong>Cocktail Hour</strong>${val(p.cocktail_time)}</div>
+    <div class="box"><strong>Reception Starts</strong>${val(p.reception_time)}</div>
+    <div class="box"><strong>DJ End Time</strong>${val(p.dj_end_time)}</div>
+    <div class="box"><strong>Ceremony Venue</strong>${val(p.ceremony_venue)}</div>
+    <div class="box"><strong>Reception Venue</strong>${val(p.reception_venue)}</div>
   </div>
-  ${genres.length?`<p><strong>Music Styles:</strong> ${genres.join(', ')}</p>`:''}
-  <h2>Bridal Party & Grand Entrance</h2>
-  <p><strong>Best Man:</strong> ${bp['bp-bestman']||'—'} &nbsp; <strong>Maid of Honor:</strong> ${bp['bp-moh']||'—'}</p>
-  <p><strong>Flower Girl(s):</strong> ${bp['bp-flower']||'—'} &nbsp; <strong>Ring Bearer(s):</strong> ${bp['bp-ring']||'—'}</p>
-  <p><strong>Announce Couple As:</strong> ${bp['bp-announce']||'—'}</p>
-  <p><strong>Entrance Song:</strong> ${bp['bp-entrance-song']||'—'}</p>
-  ${p.dj_notes?`<h2>Notes for DJ</h2><p>${p.dj_notes}</p>`:''}
-  <p style="margin-top:40px;font-size:11px;color:#999;">Generated by Looch HQ — Groove Tech Rental</p>
+
+  <h2>Bridal Party</h2>
+  <div class="grid2" style="margin-bottom:12px;">
+    <div class="box"><strong>Best Man</strong>${val(p.best_man)}</div>
+    <div class="box"><strong>Maid of Honor</strong>${val(p.maid_of_honor)}</div>
+  </div>
+  ${p.bridal_party ? `<div class="box" style="margin-bottom:12px;"><strong>Bridal Party Members</strong>${p.bridal_party}</div>` : ''}
+  <p><span class="check">${p.bridal_announced ? '✅' : '❌'}</span> Bridal party announced individually at grand entrance</p>
+
+  <h2>Toasts &amp; Blessing</h2>
+  <div class="grid2" style="margin-bottom:12px;">
+    <div class="box"><strong>Number of Toasts</strong>${val(p.toast_count)}</div>
+    <div class="box"><strong>Given By</strong>${val(p.toast_who)}</div>
+  </div>
+  <p><span class="check">${p.has_blessing ? '✅' : '❌'}</span> Blessing before dinner${p.has_blessing && p.blessing_who ? ' — ' + p.blessing_who : ''}</p>
+
+  <h2>Special Dances</h2>
+  <div class="grid2" style="margin-bottom:12px;">
+    <div class="box">
+      <strong>Mother/Son Dance</strong>
+      ${p.has_mother_son ? `✅ Yes<br>${p.mother_son_who||''}<br><em>${p.mother_son_song||'Song TBD'}</em>` : '❌ No'}
+    </div>
+    <div class="box">
+      <strong>Father/Daughter Dance</strong>
+      ${p.has_father_daughter ? `✅ Yes<br>${p.father_daughter_who||''}<br><em>${p.father_daughter_song||'Song TBD'}</em>` : '❌ No'}
+    </div>
+  </div>
+
+  <h2>Reception Events</h2>
+  <div class="grid3" style="margin-bottom:12px;">
+    <div class="box"><strong>Cake Cutting</strong>${p.has_cake ? '✅ Yes' : '❌ No'}${p.has_cake && p.cake_song ? '<br><em>'+p.cake_song+'</em>' : ''}</div>
+    <div class="box"><strong>Bouquet Toss</strong>${p.has_bouquet ? '✅ Yes' : '❌ No'}${p.has_bouquet && p.bouquet_song ? '<br><em>'+p.bouquet_song+'</em>' : ''}</div>
+    <div class="box"><strong>Garter Toss</strong>${p.has_garter ? '✅ Yes' : '❌ No'}${p.has_garter && p.garter_song ? '<br><em>'+p.garter_song+'</em>' : ''}</div>
+  </div>
+
+  <h2>Reception Timeline</h2>
+  <table><tr><th>Time</th><th>Moment</th><th>Notes</th></tr>
+  ${sorted.map(t=>`<tr><td><strong>${t.time||'—'}</strong></td><td>${t.label}</td><td style="color:#666;">${t.note||''}</td></tr>`).join('')}
+  </table>
+
+  <h2>Music Lists</h2>
+  <div class="grid2">
+    <div><strong class="must">✅ Must Play (${must.length})</strong><ul>${must.map(s=>`<li>${s.title}${s.artist?' — '+s.artist:''}</li>`).join('')||'<li style="color:#999;">None listed</li>'}</ul></div>
+    <div><strong class="dont">🚫 Do Not Play (${dont.length})</strong><ul>${dont.map(s=>`<li>${s.title}${s.artist?' — '+s.artist:''}</li>`).join('')||'<li style="color:#999;">None listed</li>'}</ul></div>
+  </div>
+  ${genres.length ? `<p><strong>Music Styles:</strong> ${genres.join(', ')}</p>` : ''}
+
+  ${p.dj_notes ? `<h2>Notes for DJ</h2><p>${p.dj_notes}</p>` : ''}
+
+  <p style="margin-top:40px;font-size:11px;color:#999;border-top:1px solid #eee;padding-top:12px;">Generated by Looch HQ — Groove Tech Rental</p>
   </body></html>`);
   w.document.close(); w.print();
 }
